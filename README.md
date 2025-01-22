@@ -1,2 +1,2 @@
 # Lettcode-Solutions
-Solving LeetCOde problems as a part of Placement Training
+Solving LeetCode problems as a part of Placement Training

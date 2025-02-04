@@ -1,6 +1,3 @@
-Sure! Here's the code without comments:
-
-```c
 #include <stdio.h>
 
 int main() {

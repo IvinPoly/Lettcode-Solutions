@@ -1,19 +1,18 @@
 def valid(f):
     
     bracket = {'}':'{',')':'(',']':'['}
-    tack=[]
+    stack=[]
     
     for char in f:
         if char in bracket:
-            top_element=tack.pop() if tack else '#'
-            if bracket[char]!=top_element:
+            if stack and stack[-1]==bracket[char]:
+                stack.pop()
+            else:
                 return False
-                
         else:
-            tack.append(char)
-            
-            
-    return not tack
+            stack.append(char)
+    return True if not stack else False
+                
     
 f='}()()()()()[][][][]'
 print(valid(f))

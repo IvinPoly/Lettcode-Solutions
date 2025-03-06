@@ -1,3 +1,4 @@
+#group similar strings together
 from collections import defaultdict
 from typing import List
 
